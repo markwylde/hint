@@ -1,0 +1,31 @@
+{
+  "name": "hinton",
+  "version": "1.0.0",
+  "description": "Output filterable debug messages for your app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwylde/hinton.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "c8": "^6.0.1",
+    "tape": "^4.11.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "string-to-color": "^2.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/markwylde/hinton/issues"
+  },
+  "homepage": "https://github.com/markwylde/hinton#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
+}
