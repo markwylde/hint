@@ -1,3 +1,5 @@
+const stripAnsi = require('strip-ansi');
+
 const test = require('tape');
 
 const hinton = require('../');
@@ -20,16 +22,15 @@ test('nothing output when no environment variable provided', t => {
 });
 
 test('works', t => {
-  t.plan(1);
+  t.plan(3);
 
   consoleLogs = [];
   process.env.HINT = '*';
 
   hinton('one', 'this is a test');
 
-  t.deepEqual(consoleLogs[0], [
-    '\x1B[38;5;160mone\x1B[39m',
-    '\x1B[38;5;245m./test/index.js:28\x1B[39m',
-    'this is a test'
-  ]);
+  t.equal(stripAnsi(consoleLogs[0][0]), 'one')
+  t.equal(stripAnsi(consoleLogs[0][1]), './test/index.js:30')
+  t.equal(stripAnsi(consoleLogs[0][2]), 'this is a test')
+
 });
