@@ -1,4 +1,9 @@
 # hinton
+
+| :zap:        Use [logslot](https://github.com/markwylde/logslot) instead.   |
+|-----------------------------------------|
+
+ 
 [![Build Status](https://travis-ci.org/markwylde/hinton.svg?branch=master)](https://travis-ci.org/markwylde/hinton)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markwylde/hinton)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/markwylde/hinton)](https://github.com/markwylde/hinton/releases)
